@@ -134,7 +134,7 @@ tasks.withType(JavaCompile) {
     options.compilerArgs.add '-XDstringConcat=inline'
 }
 
-sonarqube {
+sonar {
     properties {
         property "sonar.projectKey", "ToughTechs151_ArrayListExample"
         property "sonar.organization", "toughtechs151"
