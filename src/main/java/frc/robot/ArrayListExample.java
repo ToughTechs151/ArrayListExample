@@ -4,18 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
 
-
-
-/**
- * Suppress Warnings.
- */
+/** Suppress Warnings. */
 @java.lang.SuppressWarnings({"java:S106"})
 public class ArrayListExample {
   /**
-   * This is a main method. 
+   * This is a main method.
    *
    * @param args is a String array
-   * 
    */
   public static void main(String[] args) {
     List<String> programmingLanguages = new ArrayList<>();
@@ -44,8 +39,8 @@ public class ArrayListExample {
     scriptingLanguages.add("Perl");
     scriptingLanguages.add("Lucas");
 
-    programmingLanguages.removeAll(scriptingLanguages);
-    System.out.println("After removeAll(scriptingLanguages): " + programmingLanguages);
+    System.out.println(
+        "Include both Scripting and Programming " + programmingLanguages + scriptingLanguages);
 
     // Remove all the elements that satisfy the given predicate
     programmingLanguages.removeIf(
