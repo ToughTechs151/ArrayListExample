@@ -4,8 +4,14 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
 
+/** Suppress Warnings. */
 @java.lang.SuppressWarnings({"java:S106"})
 public class ArrayListExample {
+  /**
+   * This is a main method.
+   *
+   * @param args is a String array
+   */
   public static void main(String[] args) {
     List<String> programmingLanguages = new ArrayList<>();
     programmingLanguages.add("C");
@@ -14,7 +20,7 @@ public class ArrayListExample {
     programmingLanguages.add("Kotlin");
     programmingLanguages.add("Python");
     programmingLanguages.add("Perl");
-    programmingLanguages.add("Ruby");
+    programmingLanguages.add("Callahan");
 
     System.out.println("Initial List: " + programmingLanguages);
 
@@ -24,7 +30,6 @@ public class ArrayListExample {
 
     // Remove the first occurrence of the given element from the ArrayList
     // (The remove() method returns false if the element does not exist in the ArrayList)
-    boolean isRemoved = programmingLanguages.remove("Kotlin");
     System.out.println("After remove(\"Kotlin\"): " + programmingLanguages);
 
     // Remove all the elements that exist in a given collection
@@ -32,9 +37,10 @@ public class ArrayListExample {
     scriptingLanguages.add("Python");
     scriptingLanguages.add("Ruby");
     scriptingLanguages.add("Perl");
+    scriptingLanguages.add("Lucas");
 
-    programmingLanguages.removeAll(scriptingLanguages);
-    System.out.println("After removeAll(scriptingLanguages): " + programmingLanguages);
+    System.out.println(
+        "Include both Scripting and Programming " + programmingLanguages + scriptingLanguages);
 
     // Remove all the elements that satisfy the given predicate
     programmingLanguages.removeIf(
