@@ -32,6 +32,7 @@ public class ArrayListExample {
     scriptingLanguages.add("Python");
     scriptingLanguages.add("Ruby");
     scriptingLanguages.add("Perl");
+    scriptingLanguages.add("Tanisha");
 
     programmingLanguages.removeAll(scriptingLanguages);
     System.out.println("After removeAll(scriptingLanguages): " + programmingLanguages);
